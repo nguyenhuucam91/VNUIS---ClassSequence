@@ -8,6 +8,7 @@
 <body>
 
 <a href="{{ url('test/create') }}">Create new</a>
+<a href="{{ url('test/fake-create') }}">Create fake new</a>
     <ul>
         @foreach ($testsWithDifferentAlias as $test)
             <li>

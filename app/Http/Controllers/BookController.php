@@ -21,11 +21,27 @@ class BookController extends Controller
         //Code to use $fileService
     }
 
+    //A store method, similar to store() with error
+    public function fakeStore(Request $request)
+    {
+        $result = $this->book->create(['a' => 1, 'b' => 2]);
+        if (!$result) {
+            return abort(500);
+        }
+        return redirect('test');
+    }
+
     //Return  list of books
     public function index()
     {
         $books = $this->book->all();
         return view('test.index', ['testsWithDifferentAlias' => $books]);
+    }
+
+    //Present view for creation before hand
+    public function fakeCreate()
+    {
+        return view('test.fake-create');
     }
 
     //Present view for creation before hand

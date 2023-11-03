@@ -21,10 +21,12 @@ https://getcomposer.org/ and install to your machine
 2. Copy file .env.example to .env, and modify from line 11 to line 16. Line 14 refers to DATABASE_NAME in phpmyadmin, you should use
 `test_laravel` as in file. DB_USERNAME to be `root` and DB_PASSWORD='' if using XAMPP. If using MAMP, then use `root` as password
 
-2. Import data file (test_laravel.sql) to your database of XAMPP. Go to `localhost/phpmyadmin` and
+3. Run `php artisan key:generate`
+
+4. Import data file (test_laravel.sql) to your database of XAMPP. Go to `localhost/phpmyadmin` and
 perform as in the guide: https://www.youtube.com/watch?v=jW5lrS6EUPM
 
-3. Run `php artisan serve` in Powershell / Terminal / CMD / Gitbash
+5. Run `php artisan serve` in Powershell / Terminal / CMD / Gitbash
 
 # Flow of code
 1. Application trigger to routes/web.php
