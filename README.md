@@ -34,6 +34,6 @@ perform as in the guide: https://www.youtube.com/watch?v=jW5lrS6EUPM
 5. Controller will pass to view, in the `return view()` method, along with data in the `array([])` format.
 6. In case there is a redirect, then instead of `return view()`, it returns `return redirect(to_url)` to perform redirection.
 
-# Extends the code
+# Extend the code
 You can create new controller, make new model and create new view similar to 
 BookController by copying BookController.php and modify as needed. For validation, seek here: https://www.youtube.com/watch?v=WbGbKuct6lI.

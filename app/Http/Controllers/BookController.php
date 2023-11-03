@@ -15,6 +15,12 @@ class BookController extends Controller
         $this->book = $book;
     }
 
+    //A dummy method
+    public function dummy(FileService $fileService)
+    {
+        //Code to use $fileService
+    }
+
     //Return  list of books
     public function index()
     {
