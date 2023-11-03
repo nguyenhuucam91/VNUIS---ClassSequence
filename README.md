@@ -17,4 +17,6 @@ https://getcomposer.org/ and install to your machine
 `composer install` to install necessary package
 
 2. Import data file (test_laravel.sql) to your database of XAMPP. Go to `localhost/phpmyadmin` and
-perform as in https://www.youtube.com/watch?v=jW5lrS6EUPM
+perform. Guide: https://www.youtube.com/watch?v=jW5lrS6EUPM
+
+3. Run `php artisan serve` in Powershell / Terminal / CMD / Gitbash
