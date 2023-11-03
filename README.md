@@ -13,6 +13,7 @@ https://www.apachefriends.org/download.html
 
 3. Composer: Download latest version of composer here
 https://getcomposer.org/ and install to your machine
+(MacOS): Download Composer from homebrew: `brew install composer`
 
 # Usage
 1. After downloading this application to your machine. At project folder, where has `app`, `bootstrap`, `config` folders, run 
