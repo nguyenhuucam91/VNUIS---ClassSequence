@@ -15,29 +15,34 @@ class BookController extends Controller
         $this->book = $book;
     }
 
+    //Return  list of books
     public function index()
     {
         $books = $this->book->all();
         return view('test.index', ['testsWithDifferentAlias' => $books]);
     }
 
+    //Present view for creation before hand
     public function create()
     {
         return view('test.create');
     }
 
+    //Store data after user inputs and clicks submit on Insert new data
     public function store(Request $request)
     {
         $this->book->create($request->all());
         return redirect('test');
     }
 
+    //Present view for editing
     public function edit($id)
     {
         $test = $this->book->find($id);
         return view('test.edit', ['test' => $test]);
     }
 
+    //Store data after user inputs and click Submit on Update existing data
     public function update($id, Request $request)
     {
         $test = $this->book->find($id);
@@ -45,6 +50,7 @@ class BookController extends Controller
         return redirect('test');
     }
 
+    //Delete record
     public function delete($id)
     {
         $this->book->destroy($id);
