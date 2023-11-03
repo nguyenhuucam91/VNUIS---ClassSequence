@@ -32,7 +32,7 @@ class BookController extends Controller
         return redirect('test');
     }
 
-    public function edit($id, Request $request)
+    public function edit($id)
     {
         $test = $this->book->find($id);
         return view('test.edit', ['test' => $test]);
