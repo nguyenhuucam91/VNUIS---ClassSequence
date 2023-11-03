@@ -30,7 +30,7 @@ perform as in the guide: https://www.youtube.com/watch?v=jW5lrS6EUPM
 1. Application trigger to routes/web.php
 2. If in the list of url matches, take the controller in the array (1st position) and the action (2nd position) accordingly
 3. Find controller and action(method) in folder Http/Controllers for controller, and method for action.
-4. Controller will call model to exchange information with database, and model return controllers data for result back.
+4. Controller will call model, here is `Book` to exchange information with database, and model return controllers data for result back.
 5. Controller will pass to view, in the `return view()` method, along with data in the `array([])` format.
 6. In case there is a redirect, then instead of `return view()`, it returns `return redirect(to_url)` to perform redirection.
 

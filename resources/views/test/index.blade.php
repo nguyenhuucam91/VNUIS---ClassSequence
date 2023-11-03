@@ -6,6 +6,8 @@
     <title>Test index page</title>
 </head>
 <body>
+
+<a href="{{ url('test/create') }}">Create new</a>
     <ul>
         @foreach ($testsWithDifferentAlias as $test)
             <li>
