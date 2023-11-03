@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\TestController;
+use App\Http\Controllers\BookController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,9 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test', [TestController::class, 'index']);
-Route::get('/test/create', [TestController::class, 'create']);
-Route::post('/test', [TestController::class, 'store']);
-Route::get('/test/{id}/edit', [TestController::class, 'edit']);
-Route::post('/test/{id}', [TestController::class, 'update']);
-Route::get('/test/{id}/delete', [TestController::class, 'delete']);
+Route::get('/test', [BookController::class, 'index']);
+Route::get('/test/create', [BookController::class, 'create']);
+Route::post('/test', [BookController::class, 'store']);
+Route::get('/test/{id}/edit', [BookController::class, 'edit']);
+Route::post('/test/{id}', [BookController::class, 'update']);
+Route::get('/test/{id}/delete', [BookController::class, 'delete']);

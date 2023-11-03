@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Book;
 use Illuminate\Http\Request;
 
-class TestController extends Controller
+class BookController extends Controller
 {
     private $book;
 
